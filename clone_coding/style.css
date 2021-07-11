@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+    padding: 8px 110px;
+}
+
+.navbar_title {
+    font-size: 30px;
+}
+
+.navbar_menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar_menu li {
+    padding: 8px 20px;
+}
+
+.navbar_sub-menu {
+    list-style: none;
+}
+
+footer {
+    background-color: powderblue;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 110px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 110px;
+}
