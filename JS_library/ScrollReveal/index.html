@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScrollReveal-practice</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+</head>
+<body>
+
+    <h1 class="headline">
+        안녕!
+    </h1>
+    <p class="tagline">
+        내 이름은
+        <span class="punchline">송현지</span>
+    </p>
+
+    <script>
+        ScrollReveal().reveal('.headline');
+        ScrollReveal().reveal('.tagline', { delay: 1000 });
+        ScrollReveal().reveal('.punchline', { delay: 2000 });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Source</title>
+    <link rel="stylesheet" href="source-style.css">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+</head>
+<body>
+  
+    <!--  utility class (explicit) -->
+    <h1 class="headline load-hidden">
+        눈치게임 시~작!
+    </h1>
+
+    <!-- style extension (implicit) --> 
+    <ul class="widget-list">
+        <li class="widget">1</li>
+        <li class="widget">2</li>
+        <li class="widget">3</li>
+        <li class="widget">4</li>
+        <li class="widget">5</li>
+    </ul>
+
+    <script>
+        ScrollReveal().reveal('.headline', { duration: 500 });
+        ScrollReveal().reveal('.widget', { interval: 700 });
+    </script>
+
+</body>
+</html>
