@@ -15,46 +15,73 @@
 <body>
     <header>
         <nav class="navbar">
+
             <div class="navbar_title">
                 <a class="title">kakao</a>
             </div>
+
             <ul class="navbar_menu">
-                <li>카카오
-                    <ul class="navbar_sub-menu">
-                        <li><a href="">카카오 문화</a></li>
-                        <li><a href="">공동체</a></li>
-                        <li><a href="">히스토리</a></li>
-                    </ul>
-                </li>
-                <li><a href="">뉴스</a></li>
-                <li>기술과 서비스
-                    <ul class="navbar_sub-menu">
-                        <li><a href="">기술</a></li>
-                        <li><a href="">서비스</a></li>
-                    </ul>
-                </li>
-                <li>약속과 책임
-                    <ul class="navbar_sub-menu">
-                        <li><a href="">ESG</a></li>
-                        <li><a href="">소셜임팩트</a></li>
-                        <li><a href="">디지털 권리</a></li>
-                        <li><a href="">AI 윤리</a></li>
-                    </ul>
-                </li>
+                <label for="menu1" class="navbar_menu_list"><strong>카카오</strong></label>
+                <input type="checkbox" id="menu1">
+                <ul class="navbar_sub-menu">
+                    <li><a href="">카카오 문화</a></li>
+                    <li><a href="">공동체</a></li>
+                    <li><a href="">히스토리</a></li>
+                </ul>
+                <label for="menu2" class="navbar_menu_list"><strong>뉴스</strong></label>
+                <input type="checkbox" id="menu2">
+                <label for="menu3" class="navbar_menu_list"><strong>기술과 서비스</strong></label>
+                <input type="checkbox" id="menu3">
+                <ul class="navbar_sub-menu">
+                    <li><a href="">기술</a></li>
+                    <li><a href="">서비스</a></li>
+                </ul>
+                <label for="menu4" class="navbar_menu_list"><strong>약속과 책임</strong></label>
+                <input type="checkbox" id="menu4">
+                <ul class="navbar_sub-menu">
+                    <li><a href="">ESG</a></li>
+                    <li><a href="">소셜임팩트</a></li>
+                    <li><a href="">디지털 권리</a></li>
+                    <li><a href="">AI 윤리</a></li>
+                </ul>
             </ul>
+
             <ul class="navbar_icon">
-                <i class="fal fa-search"></i>
-                <i class="fal fa-globe"></i>
-                <i class="fal fa-moon"></i>
+                <li><i class="fas fa-search"></i></li>
+                <li><i class="fas fa-globe"></i></li>
+                <li><i class="far fa-moon"></i></li>
             </ul>
+
         </nav>
     </header>
 
     <main>
-        <h1>MAIN CONTENT</h1>
+        <div class="date_content">
+            <div class="date_img">
+                <img src="https://www.kakaocorp.com/page/calendar/light/ico_date17.gif" alt=""
+                style="height: 90px; width: 90px;">
+            </div>
+            <!-- "오늘의 카카오"랑 이미지 사이 칸 띄우기 -->
+            <div><strong class="first_line">오늘의 카카오</strong></div>
+            <div><strong class="second_line">7월 17일 토요일 소식입니다</strong></div>
+            <!-- 업데이트 내역:있어도 되고 없어도 되고 -->
+            <!-- <h3 class="update">1</h3> -->
+        </div>
+
+        <div class="news">news1</div>
+
+        <div class="culture">
+            <strong>기술과 사람으로 더 나은 세상을 만듭니다.</strong>
+            <div class="culture_link">카카오문화 바로가기</div>
+            <img src="https://www.kakaocorp.com/page/bg_home_culture_210325.png" alt="" class="culture_img">
+        </div>
+
+        <div class="news">news2</div>
+
     </main>
     
     <footer>
+
         <div class="service">
             <section class="under">
                 <strong class="under_menu"><a href="">카카오</a></strong>
@@ -108,8 +135,9 @@
                 <strong class="under_menu"><a href="">카카오계정</a></strong>
             </section>
         </div>
+
         <div class="relation">
-            <div class="info">
+            <span class="info">
                 <span>이용약관</span>
                 <span>위치기반서비스이용약관</span>
                 <span>개인정보처리방침</span>
@@ -119,8 +147,11 @@
                 <span>공지사항</span>
                 <span><a href="">사이버윤리실</a></span>
                 <span><a href="">Contact Us</a></span>
-            </div>
-        </div>
+            </span>
+            <span class="cite">관련사이트</span>
+            <div class="corp">©Kakao Corp. All rights reserved.</div>
+        </>
+
     </footer>
 </body>
 </html>

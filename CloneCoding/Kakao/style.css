@@ -1,21 +1,30 @@
 body {
     margin: 0;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 a {
+    color: black;
     text-decoration: none;
+}
+
+header {
+    height: 90px;
+    outline: black;
+    /* position: fixed; */
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: pink;
-    padding: 8px 110px;
+    background-color: white;
 }
 
 .navbar_title {
-    font-size: 30px;
+    padding-left: 35px;
+    font-size: 35px;
 }
 
 .navbar_menu {
@@ -24,26 +33,214 @@ a {
     list-style: none;
 }
 
-.navbar_menu li {
-    padding: 8px 20px;
+.navbar_menu_list {
+    padding: 10px 30px;
+    font-size: 20px;
+    letter-spacing: -2px;
 }
 
 .navbar_sub-menu {
+    display: none;
     list-style: none;
 }
 
+input#menu1 {
+    display: none;
+}
+input#menu1:checked+ul.navbar_sub-menu {
+    display: block;
+}
+
+input#menu2 {
+    display: none;
+}
+input#menu2:checked+ul.navbar_sub-menu {
+    display: block;
+}
+
+input#menu3 {
+    display: none;
+}
+input#menu3:checked+ul.navbar_sub-menu {
+    display: block;
+}
+
+input#menu4 {
+    display: none;
+}
+input#menu4:checked+ul.navbar_sub-menu {
+    display: block;
+}
+
+.navbar_icon {
+    padding-right: 10px;
+    list-style: none;
+    display: flex;
+}
+
+.navbar_icon li {
+    font-size: 25px;
+    padding: 0px 12px;
+}
+
+.navbar_icon i {
+    background-color:white;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    /* 배경 원 위치 이동하기 */
+}
+
+.navbar_icon i:hover {
+    background-color: lightgrey;
+}
+
+.date_content {
+    position: relative;
+    height: 380px;
+    padding: 0px 20px;
+}
+
+.date_img {
+    position: absolute;
+    top: 30%;
+    height: 50px;
+    float: left;
+}
+
+.first_line {
+    position: absolute;
+    top: 30%;
+	font-size: 55px;
+	letter-spacing: -5px;
+	line-height: 85px;
+    padding: 0px 20px;
+    padding-left: 110px;
+}
+
+.second_line {
+    position: absolute;
+    top: 53%;
+	font-size: 58px;
+	letter-spacing: -5px;
+	line-height: 85px;
+    padding: 0px 0px;
+}
+
+.update {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    background-color: orange;
+}
+
+.news {
+    font-size: 30px;
+    text-align: center;
+
+    /* Box */
+	height: 200px;
+	width: 1620px;
+	margin: 36px 18px;
+
+    /* Effects */
+	box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 40px 0px;
+	border-radius: 14px;
+}
+
+.culture {
+    position: relative;
+	font-size: 50px;
+	letter-spacing: -5px;
+	line-height: 200px;
+	text-align: center;
+
+	/* Box */
+	height: 680px;
+	width: 1620px;
+	margin: 36px 18px;
+
+	/* Effects */
+	box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 40px 0px;
+    border-radius: 14px;
+}
+
+.culture_link {
+    position: absolute;
+    left: 43.5%;
+    padding: 15px 0px;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -3px;
+    color: white;
+    background-color: black;
+    border-radius: 28px;
+    width: 210px;
+}
+
+.culture_img {
+    padding: 110px 0px;
+    height: 300px;
+    width: 1100px;
+}
+
 footer {
-    background-color: powderblue;
+    background-color: white;
 }
 
 .service {
+    padding: 25px 0px;
     display: flex;
     justify-content: space-between;
-    padding: 8px 110px;
+	height: 330px;
+	margin: 36px 18px;
+}
+
+.under {
+    font-size: 17px;
+    list-style: none;
+    letter-spacing: -1px;
+}
+
+.under li {
+    padding: 8px 0px;
+}
+
+.relation {
+    position: relative;
+	height: 150px;
+    width: 100%;
 }
 
 .info {
+    position: absolute;
+    width: 1130px;
+    color: grey;
+    font-size: 15px;
+    letter-spacing: -0.5px;
     display: flex;
     justify-content: space-between;
-    padding: 8px 110px;
+    padding: 8px 10px;
+}
+
+.cite {
+    position: absolute;
+    right: 0%;
+    float: right;
+    font-size: 15px;
+    letter-spacing: -1px;
+    width: 260px;
+    height: 47px;
+    background-color: lightgrey;
+    border-radius: 70px;
+    /*글씨 위치 이동하기 */
+}
+
+.corp {
+    position: absolute;
+    top: 28%;
+    color: grey;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    line-height: 90px;
 }
