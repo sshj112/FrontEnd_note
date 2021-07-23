@@ -12,7 +12,7 @@ a {
 header {
     height: 90px;
     outline: black;
-    /* position: fixed; */
+    background-color: white;
 }
 
 .navbar {
@@ -90,7 +90,6 @@ input#menu4:checked+ul.navbar_sub-menu {
     width: 40px;
     /* 배경 원 위치 이동하기 */
 }
-
 .navbar_icon i:hover {
     background-color: lightgrey;
 }
@@ -142,18 +141,124 @@ main {
     background-color: orangered;
 }
 
-.news {
-    font-size: 30px;
-    text-align: center;
+.top_box {
+	position: relative;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.top_box img {
+    height: 50px;
+}
+
+.News {
+    position: absolute;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: -3px;
+    padding: 50px 45px;
 
     /* Box */
-	height: 200px;
-	width: 1620px;
+	height: 400px;
+	width: 700px;
 	margin: 36px 18px;
 
     /* Effects */
 	box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 40px 0px;
 	border-radius: 14px;
+}
+.News:hover {
+    box-shadow: 5px 5px 20px lightgray;
+    transform: translate(0px, -8px);
+    transition-duration: 0.3s;
+}
+
+.AI_BlockChain {
+    position: absolute;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: -3px;
+    padding: 50px 45px;
+
+    /* Box */
+	height: 240px;
+	width: 270px;
+	margin: 36px 18px;
+
+    /* Effects */
+	box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 40px 0px;
+	border-radius: 14px;
+}
+.AI_BlockChain:hover {
+    box-shadow: 5px 5px 20px lightgray;
+    transform: translate(0px, -8px);
+    transition-duration: 0.3s;
+}
+
+.Stock {
+    position: absolute;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: -3px;
+    padding: 50px 45px;
+
+    /* Box */
+	height: 120px;
+	width: 270px;
+	margin: 36px 18px;
+
+    /* Effects */
+	box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 40px 0px;
+	border-radius: 14px;
+}
+.Stock:hover {
+    box-shadow: 5px 5px 20px lightgray;
+    transform: translate(0px, -8px);
+    transition-duration: 0.3s;
+}
+
+.Business {
+    position: absolute;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: -3px;
+    padding: 50px 45px;
+
+    /* Box */
+	height: 240px;
+	width: 270px;
+	margin: 36px 18px;
+
+    /* Effects */
+	box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 40px 0px;
+	border-radius: 14px;
+}
+.Business:hover {
+    box-shadow: 5px 5px 20px lightgray;
+    transform: translate(0px, -8px);
+    transition-duration: 0.3s;
+}
+
+.Responsibility {
+    position: absolute;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: -3px;
+    padding: 50px 45px;
+
+    /* Box */
+	height: 120px;
+	width: 270px;
+	margin: 36px 18px;
+
+    /* Effects */
+	box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 40px 0px;
+	border-radius: 14px;
+}
+.Responsibility:hover {
+    box-shadow: 5px 5px 20px lightgray;
+    transform: translate(0px, -8px);
+    transition-duration: 0.3s;
 }
 
 .culture {
@@ -192,21 +297,100 @@ main {
     width: 1100px;
 }
 
-.under_box {
+.middle_box {
+	position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle_box img {
+    height: 50px;
+}
+
+.Customer_Center {
+    position: absolute;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: -3px;
+    padding: 50px 45px;
+    right: 0%;
+
+    /* Box */
+	height: 120px;
+	width: 270px;
+	margin: 36px 18px;
+
+    /* Effects */
+	box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 40px 0px;
+	border-radius: 14px;
+}
+.Customer_Center:hover {
+    box-shadow: 5px 5px 20px lightgray;
+    transform: translate(0px, -8px);
+    transition-duration: 0.3s;
+}
+
+.Kakao_Privacy {
+    position: absolute;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: -3px;
+    padding: 50px 45px;
+    right: 0%;
+
+    /* Box */
+	height: 120px;
+	width: 270px;
+	margin: 36px 18px;
+
+    /* Effects */
+	box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 40px 0px;
+	border-radius: 14px;
+}
+.Kakao_Privacy:hover {
+    box-shadow: 5px 5px 20px lightgray;
+    transform: translate(0px, -8px);
+    transition-duration: 0.3s;
+}
+
+.Tech_Service {
+    position: absolute;
+    font-size: 20px;
+    position: relative;
+    letter-spacing: -3px;
+    padding: 50px 45px;
+    right: 0%;
+
+    /* Box */
+	height: 450px;
+	width: 700px;
+	margin: 36px 18px;
+
+    /* Effects */
+	box-shadow: rgba(0, 0, 0, 0.08) 2px 5px 40px 0px;
+	border-radius: 14px;
+}
+.Tech_Service:hover {
+    box-shadow: 5px 5px 20px lightgray;
+    transform: translate(0px, -8px);
+    transition-duration: 0.3s;
+}
+
+.base_box {
     display: flex;
     justify-content: space-between;
 }
 
 .yellow_box {
-    font-size: 40px;
+    font-size: 38px;
     background-color: #FAE100;
     position: relative;
     letter-spacing: -3px;
-    padding: 60px 50px;
+    padding: 50px 45px;
 
     /* Box */
-	height: 380px;
-	width: 790px;
+	height: 350px;
+	width: 700px;
 	margin: 36px 18px;
 
     /* Effects */
@@ -218,7 +402,7 @@ main {
     position: absolute;
     text-align: center;
     left: 6%;
-    top: 40%;
+    top: 43%;
     padding: 15px 0px;
     font-size: 18px;
     line-height: 25px;
@@ -233,19 +417,19 @@ main {
     position: absolute;
     height: 210px;
     left: 65%;
-    top: 48%;
+    top: 40%;
 }
 
 .blue_box {
-    font-size: 40px;
+    font-size: 38px;
     background-color: #3c64FF;
     position: relative;
     letter-spacing: -3px;
-    padding: 60px 50px;
+    padding: 50px 45px;
 
     /* Box */
-	height: 380px;
-	width: 790px;
+	height: 350px;
+	width: 700px;
 	margin: 36px 18px;
 
     /* Effects */
@@ -257,7 +441,7 @@ main {
     position: absolute;
     text-align: center;
     left: 5%;
-    top: 45%;
+    top: 43%;
     padding: 15px 0px;
     font-size: 18px;
     line-height: 25px;
@@ -272,7 +456,7 @@ main {
     position: absolute;
     height: 210px;
     left: 40%;
-    top: 48%;
+    top: 40%;
 }
 
 .collect {
@@ -298,7 +482,6 @@ main {
     width: 320px;
     height: 70px;
 }
-
 .collect_link:hover {
     background-color: grey;
 }
@@ -314,7 +497,6 @@ main {
     color: white;
     border-radius: 100%;
 }
-
 .arrow-up:hover {
     background-color: rgb(80, 79, 79);
 }
