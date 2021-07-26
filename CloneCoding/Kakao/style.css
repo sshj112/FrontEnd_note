@@ -40,8 +40,19 @@ header {
 }
 
 .navbar_sub-menu {
+    /* display: flex; */
     display: none;
     list-style: none;
+}
+
+.navbar_sub-menu li {
+
+    background-color: black;
+
+}
+
+.navbar_sub-menu a {
+    color: white;
 }
 
 input#menu1 {
