@@ -1,4 +1,5 @@
 const dateContent = document.querySelector(".second_line");
+const timeContent = document.querySelector(".Stock_hashtag");
 
 function getDayKor(day) {
     if (day === 0) {
@@ -20,16 +21,20 @@ function getDayKor(day) {
     }
 }
 
-function getToday() {
-    const today = new Date();
-    const month = today.getMonth() + 1;
-    const date = today.getDate();
-    const day = today.getDay();
+function getTime() {
+    const time = new Date();
+    const year = time.getYear()-100+2000;
+    const month = time.getMonth() + 1;
+    const date = time.getDate();
+    const day = time.getDay();
+    const hour = time.getHours();
+    const minute = time.getMinutes();
     dateContent.innerText = `${month}월 ${date}일 ${getDayKor(day)}요일 소식입니다`;
+    timeContent.innerText = `${year}.0${month}.${date}.0${hour}.${minute}AM`;
 }
 
 function init() {
-    getToday();
+    getTime();
 }
 
 init();
